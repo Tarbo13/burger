@@ -1,6 +1,4 @@
-const connection = require("./connection");
-
-connection = require("../config/connection");
+const connection = require("../config/connection");
 
 let orm = {
 
