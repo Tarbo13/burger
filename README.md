@@ -16,7 +16,7 @@ This application can be used by deploying the site via the link below.  Once the
 
 <br>
 
-[Portfolio page](file:///C:/Users/robin/developer/boot-camp/homework/Portfolio/index.html)
+[Portfolio page](https://tarbo13.github.io/Portfolio/)
 
 
 ## Contributors
