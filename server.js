@@ -4,7 +4,7 @@ var exphbs = require("express-handlebars");
 let router = require("./controllers/burgers_controller");
 
 let app = express();
-let PORT = process.env.PORT || 3001;
+let PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
