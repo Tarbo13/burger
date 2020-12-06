@@ -1,0 +1,10 @@
+.display-4 {
+    font-weight: 900;
+    font-family: cursive;
+}
+
+.panel-heading {
+    border-style: ridge;
+    border-color: brown;
+    
+}
