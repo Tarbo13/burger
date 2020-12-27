@@ -1,5 +1,5 @@
 $(function() {
-    $(".create-form").on("submit", function(event) {
+    $(".create-form").on("click", function(event) {
         event.preventDefault();
 
         let newBurger = {
@@ -15,7 +15,7 @@ $(function() {
         });
     });
 
-    $(".earburger").on("click", function(event) {
+    $(".eatburger").on("click", function(event) {
         event.preventDefault();
 
         let id = $(this).data("id");
@@ -40,7 +40,9 @@ $(function() {
         $.ajax({
             type: "DELETE",
             url: "/api/burgers/" + id
-        }).then(location.reload());
+        })
+        .then(location.reload());       
+        
     });
 });
 

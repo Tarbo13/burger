@@ -13,7 +13,7 @@ function traslateSql(obj) {
     let arr = [];
     for (var key in obj) {
         let value = obj[key];
-        if (Object.jasOwnProperty.call(obj, key)) {
+        if (Object.hasOwnProperty.call(obj, key)) {
             if(typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
             }
@@ -26,30 +26,30 @@ function traslateSql(obj) {
 
 let orm = {
 
-    selectAll: function(table, callBack) {
+    selectAll: function(table, cb) {
         let query = "SELECT * FROM " + table + ";";
 
         connection.query(query, function(err,res) {
             if (err) {
                 throw err;
             }
-            callBack(res);
+            cb(res);
             
         });
     },
 
-    insertOne: function(table, cols, vals, callBack) {
+    insertOne: function(table, cols, vals, cb) {
         let query = "INSERT INTO " + table + " (" + cols.toString() + ") " + "VALUES (" + createQmarks(vals.length) + ") ";
         console.log(query);
         connection.query(query, vals, function(err,res) {
             if (err) {
                 throw err;
             }
-            callBack(res);
+            cb(res);
         });
     },
 
-    updateOne: function(table, objColVals, condition, callBack) {
+    updateOne: function(table, objColVals, condition, cb) {
         let query = "UPDATE " + table + " SET " + traslateSql(objColVals) + " WHERE " + condition; 
 
         console.log(query);
@@ -57,12 +57,12 @@ let orm = {
             if (err) {
                 throw err;
             }
-            callBack(res);
+            cb(res);
             
         });
     },
 
-    deleteOne: function(table, condition, callBack) {
+    deleteOne: function(table, condition, cb) {
         let query = "DELETE FROM " + table + " WHERE " + condition;
 
         console.log(query);
@@ -70,7 +70,7 @@ let orm = {
             if (err) {
                 throw err;
             }
-            callBack(res);
+            // cb(res);
             
         });
     }
