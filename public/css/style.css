@@ -16,7 +16,7 @@ background: -webkit-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23
 }
 
 .orderCol {
-    box-shadow: rgba(0, 0, 0, 0.81) 10px 33px 74px 29px;
+    box-shadow: rgba(0, 0, 0, 0.81) 1px 2px 3px 5px;
     background-color: rgb(237, 146, 27);
 }
 
@@ -26,13 +26,14 @@ background: -webkit-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23
 
 .button {
     border-radius: 4px;
-    background-color: #f4511e;
+    box-shadow: rgba(0, 0, 0, 0.81) 1px 2px 3px 5px;
+    background: linear-gradient(to bottom,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%);
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -62,5 +63,6 @@ background: -webkit-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23
     opacity: 1;
     right: 0;
   }
+
 
 
