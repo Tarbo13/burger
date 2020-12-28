@@ -1,10 +1,26 @@
 .display-4 {
     font-weight: 900;
     font-family: cursive;
+    color: rgb(17, 102, 10);
+    text-decoration: underline;
 }
 
 .panel-heading {
     border-style: ridge;
-    border-color: brown;
-    
+    border-color: brown;    
 }
+
+.jumbotron { 
+background: -webkit-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); 
+
+}
+
+.orderCol {
+    box-shadow: rgba(0, 0, 0, 0.81) 10px 33px 74px 29px;
+    background-color: rgb(237, 146, 27);
+}
+
+.burgList {
+    color: white;
+}
+

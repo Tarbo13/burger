@@ -1,5 +1,6 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
+    <img src="/public/img/burgerIcon.png"> 
     <h1 class="display-4">Eat Da Buger</h1>
     <p class="lead">How many Burgers can you eat?</p>
     <form>
@@ -17,9 +18,9 @@
     <div class="col-sm-6">
         <div class="panel panel-default">
             <div class="panel-heading" id="leftside"><strong>Order Your Burger</strong></div>
-            <div class="panel-body">
+            <div class="orderCol panel-body">
 
-                <ul>
+                <ul class="burgList">
                     {{#each burgers}}
                     {{#unless devoured}}
                     <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
@@ -31,12 +32,12 @@
         </div>
     </div>
 
-
+  
 <div class="col-sm-6 float-right">
     <div class="panel panel-default">
         <div class="panel-heading" id="rightside"><strong>Devour the burgers</strong></div>
-        <div class="panel-body">
-              <ul>
+        <div class="orderCol panel-body">
+              <ul class="burgList">
                     {{#each burgers}}
                     {{#if devoured}}
                     <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
